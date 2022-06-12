@@ -12,10 +12,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Collections;
 
-@Configuration
-public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
+//@Configuration
+public class SpringSecurityConfig //extends WebSecurityConfigurerAdapter
+{
 
-    @Bean
+    /*@Bean
     public PasswordEncoder getBcrytpPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
@@ -40,5 +41,5 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin().permitAll()
                 .and()
                 .logout().logoutUrl("/bye");
-    }
+    }*/
 }
